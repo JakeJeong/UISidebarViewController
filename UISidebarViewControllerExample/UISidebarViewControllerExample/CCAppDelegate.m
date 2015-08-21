@@ -9,6 +9,7 @@
 #import "CCAppDelegate.h"
 
 #import "UISidebarViewController.h"
+#import "CCViewController.h"
 
 @implementation CCAppDelegate
 
@@ -16,7 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UIViewController *newVC = [UIViewController new];
+    CCViewController *newVC = [[CCViewController alloc]init];
     newVC.view.backgroundColor = [UIColor whiteColor];
 
     UIViewController *navVC = [[UINavigationController alloc] initWithRootViewController:newVC];

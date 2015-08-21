@@ -20,6 +20,8 @@
 		223D574018D1982200CE2C7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223D573E18D1982200CE2C7B /* InfoPlist.strings */; };
 		223D574218D1982200CE2C7B /* UISidebarViewControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D574118D1982200CE2C7B /* UISidebarViewControllerExampleTests.m */; };
 		223D574E18D1989200CE2C7B /* UISidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D574D18D1989200CE2C7B /* UISidebarViewController.m */; };
+		CE09DA3B1B86C4C000B30995 /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09DA391B86C4C000B30995 /* CCViewController.m */; };
+		CE09DA3C1B86C4C000B30995 /* CCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE09DA3A1B86C4C000B30995 /* CCViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		223D574118D1982200CE2C7B /* UISidebarViewControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISidebarViewControllerExampleTests.m; sourceTree = "<group>"; };
 		223D574C18D1989200CE2C7B /* UISidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISidebarViewController.h; sourceTree = "<group>"; };
 		223D574D18D1989200CE2C7B /* UISidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISidebarViewController.m; sourceTree = "<group>"; };
+		CE09DA381B86C4C000B30995 /* CCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
+		CE09DA391B86C4C000B30995 /* CCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
+		CE09DA3A1B86C4C000B30995 /* CCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,9 @@
 				223D574B18D1989200CE2C7B /* UISidebarViewController */,
 				223D572518D1982200CE2C7B /* CCAppDelegate.h */,
 				223D572618D1982200CE2C7B /* CCAppDelegate.m */,
+				CE09DA381B86C4C000B30995 /* CCViewController.h */,
+				CE09DA391B86C4C000B30995 /* CCViewController.m */,
+				CE09DA3A1B86C4C000B30995 /* CCViewController.xib */,
 				223D572E18D1982200CE2C7B /* Images.xcassets */,
 				223D571D18D1982200CE2C7B /* Supporting Files */,
 			);
@@ -236,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223D572F18D1982200CE2C7B /* Images.xcassets in Resources */,
+				CE09DA3C1B86C4C000B30995 /* CCViewController.xib in Resources */,
 				223D572118D1982200CE2C7B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +266,7 @@
 			files = (
 				223D572718D1982200CE2C7B /* CCAppDelegate.m in Sources */,
 				223D572318D1982200CE2C7B /* main.m in Sources */,
+				CE09DA3B1B86C4C000B30995 /* CCViewController.m in Sources */,
 				223D574E18D1989200CE2C7B /* UISidebarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +468,7 @@
 				223D574718D1982200CE2C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223D574818D1982200CE2C7B /* Build configuration list for PBXNativeTarget "UISidebarViewControllerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +477,7 @@
 				223D574A18D1982200CE2C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
