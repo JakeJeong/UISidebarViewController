@@ -87,6 +87,8 @@
 {
     [super viewDidLoad];
 
+    //TEST
+    
     // Hide own view
     self.view.backgroundColor = [UIColor clearColor];
 
