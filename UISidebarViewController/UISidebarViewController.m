@@ -226,7 +226,11 @@
     // Tap gesture
     self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
 }
-
+- (void)setSlideGestureEnabled:(BOOL)slideGestureEnabled;
+{
+    self.openSidebarPanGesture.enabled = slideGestureEnabled;
+    self.closeSidebarPanGesture.enabled = slideGestureEnabled;
+}
 
 #pragma mark - Class Methods
 
