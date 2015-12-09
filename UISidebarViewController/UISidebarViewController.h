@@ -51,7 +51,7 @@
     @property (nonatomic, copy) AnimationCompletionBlock showSidebarCompletion;
     @property (nonatomic, copy) AnimationBlock hideSidebarAnimation;
     @property (nonatomic, copy) AnimationCompletionBlock hideSidebarCompletion;
-
+    @property (nonatomic, assign) BOOL slideGestureEnabled;
     /** Flag for whether or not sidebar is in process of showing or is shown. This excludes if the sidebar is actually visible but is in the process of hiding. */
     @property (nonatomic, assign, readonly) BOOL sidebarIsShowing;
 
@@ -67,4 +67,5 @@
     /** @brief Toggle displaying of sidebar */
     - (void)toggleSidebar:(id)sender;
 
+    - (void)setSlideGestureEnabled:(BOOL)slideGestureEnabled;
 @end

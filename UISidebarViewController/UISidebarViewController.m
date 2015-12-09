@@ -340,11 +340,13 @@
         self.sidebarIsShowing = (velocity.x > 0);
 
         // Allow dragging only in x-coordinates by only updating the x-coordinate with translation position.
-        self.sidebarVC.view.center = CGPointMake(
-            self.sidebarVC.view.center.x + translatedPoint.x,
-            self.sidebarVC.view.center.y
-        );
-        [gesture setTranslation:CGPointMake(0,0) inView:self.view];
+        if (CGRectGetMinX(self.sidebarVC.view.frame) < 0) {
+            self.sidebarVC.view.center = CGPointMake(
+                                                     self.sidebarVC.view.center.x + translatedPoint.x,
+                                                     self.sidebarVC.view.center.y
+                                                     );
+            [gesture setTranslation:CGPointMake(0,0) inView:self.view];
+        }
     }
 
     // Panning starting - if opening sidebar, check view order
